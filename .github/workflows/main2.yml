@@ -19,16 +19,4 @@ jobs:
           article_limit: 5
           github_token: ${{ secrets.TOKEN_GITHUB }}
 
-      - name: fetch-tweeets-in-README
-        uses: krrishmahar/fetch-my-tweets@v.1.1.1--prelease
-        with:
-    # Twitter or X username
-          username: ${{ secrets.USERNAME }}
-    # Number of tweets to fetched.
-          tweet_limit: 4
-    # Twitter or X email
-          email_token: ${{ secrets.EMAIL }}
-    # Twitter or X password.
-          password_token: ${{ secrets.PASSWORD }}
-    # GitHub token for authentication
-          github_token: ${{ secrets.TOKEN_GITHUB }}
+      
