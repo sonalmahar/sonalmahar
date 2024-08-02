@@ -23,11 +23,11 @@ jobs:
         uses: krrishmahar/fetch-my-tweets@v.1.4.0
         env:
     # Twitter or X username
-          username: ${{ secrets.USERNAME }}
+          username: Krrish49357796
     # Number of tweets to fetched.
           tweet_limit: 4
     # Twitter or X email
-          email_token: ${{ secrets.EMAIL }}
+          email_token: krrishmahar5@gmail.com
     # Twitter or X password.
           password_token: ${{ secrets.PASSWORD }}
     # GitHub token for authentication
