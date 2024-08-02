@@ -24,22 +24,11 @@ jobs:
         with:
           username: Krrish313563
       # Number of tweets to fetched.
-          tweet_limit: 3 # default is 3
+          tweet_limit: 4 # default is 3
       # Twitter or X email
           email_token: krrishmahar@gmail.com
       # Twitter or X password.
           password_token: ${{ secrets.PASSWORD }}
           # GitHub token for authentication
           github_token: ${{ secrets.TOKEN_GITHUB }}
-
-      - name: Commit and push changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: Krrish Mahar
-          author_email: krrishmahar@gmail.com
-          message: 'Update recent articles in README'
-          add: |
-            recent_articles.md
-            README.md
-          push: true
 
