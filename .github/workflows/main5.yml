@@ -21,7 +21,7 @@ jobs:
           
       - name: fetch-tweeets-in-README
         uses: krrishmahar/fetch-my-tweets@v.1.4.0
-        env:
+        with:
     # Twitter or X username
           username: Krrish49357796
     # Number of tweets to fetched.
