@@ -20,13 +20,13 @@ jobs:
           github_token: ${{ secrets.TOKEN_GITHUB }}
           
       - name: fetch-tweeets-in-README
-        uses: krrishmahar/fetch-my-tweets@v.1.4.0
+        uses: krrishmahar/fetch-my-tweets@v.1.4.1
         with:
-          username: Krrish49357796
+          username: Krrish313563
       # Number of tweets to fetched.
           tweet_limit: 3 # default is 3
       # Twitter or X email
-          email_token: krrishmahar5@gmail.com
+          email_token: krrishmahar@gmail.com
       # Twitter or X password.
           password_token: ${{ secrets.PASSWORD }}
           # GitHub token for authentication
