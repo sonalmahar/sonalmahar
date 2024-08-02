@@ -20,7 +20,7 @@ jobs:
           github_token: ${{ secrets.TOKEN_GITHUB }}
           
       - name: fetch-tweeets-in-README
-        uses: krrishmahar/fetch-my-tweets@v.1.4.0
+        uses: krrishmahar/fetch-my-tweets@v.1.4.1
         with:
           username: Krrish49357796
       # Number of tweets to fetched.
