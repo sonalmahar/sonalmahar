@@ -20,7 +20,7 @@ jobs:
           github_token: ${{ secrets.TOKEN_GITHUB }}
           
       - name: fetch-tweeets
-        uses: krrishmahar/fetch-tweets@v.0.0.2
+        uses: krrishmahar/fetch-tweets@v.0.0.3
         with:
           username: Krrish49357796
       # Number of tweets to fetched.
