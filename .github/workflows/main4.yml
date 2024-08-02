@@ -1,0 +1,33 @@
+name: Update Profile README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  
+  workflow_dispatch: 
+  
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update README with latest articles
+        uses: Prachi-Jamdade/update-content@v1.0.0
+        with:
+          feed_urls: https://medium.com/feed/@krrishmahar5
+          article_limit: 5
+          github_token: ${{ secrets.TOKEN_GITHUB }}
+      - name: fetch-tweeets-in-README
+        uses: krrishmahar/fetch-my-tweets@v.1.3.10
+        env:
+    # Twitter or X username
+          username: ${{ secrets.USERNAME }}
+    # Number of tweets to fetched.
+          tweet_limit: 4
+    # Twitter or X email
+          email_token: ${{ secrets.EMAIL }}
+    # Twitter or X password.
+          password_token: ${{ secrets.PASSWORD }}
+    # GitHub token for authentication
+          github_token: ${{ secrets.TOKEN_GITHUB }}
