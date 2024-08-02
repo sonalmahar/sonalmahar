@@ -20,7 +20,7 @@ jobs:
           github_token: ${{ secrets.TOKEN_GITHUB }}
           
       - name: fetch-tweeets-in-README
-        uses: krrishmahar/fetch-my-tweets@v.1.4.1
+        uses: krrishmahar/fetch-my-tweets@v.1.4.0
         with:
           username: Krrish313563
       # Number of tweets to fetched.
@@ -31,4 +31,15 @@ jobs:
           password_token: ${{ secrets.PASSWORD }}
           # GitHub token for authentication
           github_token: ${{ secrets.TOKEN_GITHUB }}
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Krrish Mahar
+          author_email: krrishmahar@gmail.com
+          message: 'Update recent articles in README'
+          add: |
+            recent_articles.md
+            README.md
+          push: true
 
